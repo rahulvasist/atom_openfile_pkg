@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle open-file-pkg'
+      'command': 'open-file-pkg:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'open-file-pkg'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'open-file-pkg:toggle'
+        }
+      ]
+    ]
+  }
+]
